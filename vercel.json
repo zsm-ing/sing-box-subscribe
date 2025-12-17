@@ -1,12 +1,11 @@
 {
-  "version": 3,
-  "functions": {
-    "api/*.py": {
-      "runtime": "python3.11",
-      "maxDuration": 60
-    }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/app.py" }
-  ]
+    "functions": {
+        "api/app.py": {
+          "maxDuration": 60
+        }
+    },
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/api/app" }
+    ],
+    "outputDirectory": "tmp"
 }
