@@ -1,6 +1,7 @@
 {
+  "version": 3,
   "functions": {
-    "api/app.py": {
+    "api/*.py": {
       "runtime": "python3.11",
       "maxDuration": 60
     }
